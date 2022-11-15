@@ -1,0 +1,30 @@
+.flex-container {
+  display: flex;
+  height: 200px;
+  align-items: center;
+}
+
+input[type=submit] {
+  margin: 2px;
+}
+
+@media (min-width: 700px) {
+  input[type=text] {
+    width: 500px;
+    padding: 8px 12px;
+    margin: 20px 0;
+    grid-template-columns: auto;
+  }
+}
+@media (max-width: 699px) {
+  input[type=text] {
+    width: 100%;
+    padding: 8px 12px;
+    margin: 20px 0;
+    grid-template-columns: auto;
+  }
+}
+a {
+  padding-left: 8px;
+  text-decoration: none;
+}/*# sourceMappingURL=google.css.map */
