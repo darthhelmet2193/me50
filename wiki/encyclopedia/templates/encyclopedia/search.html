@@ -1,0 +1,17 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Search Results
+{% endblock %}
+
+{% block body %}
+    <h1>Did you mean:</h1>
+
+    <ul>
+        {% for entry in entries %}
+            <li> <a href="wiki/{{ entry }}">{{ entry }}</li>
+        {% endfor %}
+        
+    </ul>
+
+{% endblock %}
